@@ -1,0 +1,12 @@
+.action {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  &-item {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+}

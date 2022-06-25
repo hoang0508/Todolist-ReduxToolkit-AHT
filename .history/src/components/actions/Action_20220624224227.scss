@@ -1,0 +1,12 @@
+.action {
+  display: flex;
+  align-items: center;
+  gap: 0 10px;
+  &-item {
+    width: 30px;
+    height: 30px;
+    background-color: #ccc;
+  }
+  &-save {
+  }
+}

@@ -1,0 +1,49 @@
+#customers {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #fff;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+#customers thead {
+  background-color: #eee;
+}
+
+#customers td,
+#customers th {
+  padding: 8px;
+  text-align: center;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  color: #000;
+}
+
+.status {
+  padding: 6px;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 5px;
+  &-default {
+    background-color: #ff6651;
+  }
+  &-success {
+    background-color: #20e3b2;
+  }
+  &-warning {
+    background-color: #fff12c;
+  }
+  &-danger {
+    background-color: #da1111;
+  }
+}

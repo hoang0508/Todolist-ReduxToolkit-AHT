@@ -1,0 +1,19 @@
+.input {
+  &-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  &-search {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #eee;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+  &-radio {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    cursor: pointer;
+  }
+}
