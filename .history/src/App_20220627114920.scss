@@ -1,0 +1,82 @@
+.post {
+  margin: 40px 0;
+  &-title {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    background: #eb3349; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+      to left,
+      #eb3349,
+      #f45c43
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+      to left,
+      #eb3349,
+      #f45c43
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: 600;
+  }
+  &-null {
+    display: flex;
+    justify-content: center;
+    gap: 0 20px;
+    margin-top: 20px;
+  }
+  &-save {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    background-color: #fff;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 15px;
+  }
+  &-status {
+    display: flex;
+    align-items: center;
+    gap: 0 20px;
+  }
+}
+
+.lds-ring {
+  display: inline-block;
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 80px;
+}
+.lds-ring div {
+  box-sizing: border-box;
+  display: block;
+  position: absolute;
+  width: 64px;
+  height: 64px;
+  margin: 8px;
+  border: 8px solid #fff;
+  border-radius: 50%;
+  animation: lds-ring 1.2s cubic-bezier(0.5, 0, 0.5, 1) infinite;
+  border-color: #fff transparent transparent transparent;
+  background-color: #eb3349;
+}
+.lds-ring div:nth-child(1) {
+  animation-delay: -0.45s;
+}
+.lds-ring div:nth-child(2) {
+  animation-delay: -0.3s;
+}
+.lds-ring div:nth-child(3) {
+  animation-delay: -0.15s;
+}
+@keyframes lds-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
